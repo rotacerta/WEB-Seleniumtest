@@ -17,5 +17,11 @@ namespace ScriptsTeste_PBPWEB.Utils
             Screenshot foto = camera.GetScreenshot();
             foto.SaveAsFile(ScreenshotsFolder + screenshotFileName, ScreenshotImageFormat.Png);
         }
+
+        public void OpenBrowser(string url, IWebDriver Driver)
+        {
+            Driver.Manage().Window.Maximize();
+            Driver.Navigate().GoToUrl(url);
+        }
     }
 }

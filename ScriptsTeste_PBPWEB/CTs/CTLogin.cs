@@ -24,7 +24,7 @@ namespace ScriptsTeste_PBPWEB.CTs
             utils = new Util();
         }
 
-        private void OpenBrowser(string url)
+        private void OpenBrowser(string url, IWebDriver Driver)
         {
             Driver.Manage().Window.Maximize();
             Driver.Navigate().GoToUrl(url);
@@ -32,7 +32,7 @@ namespace ScriptsTeste_PBPWEB.CTs
 
         private void ExecuteLogin(string mail, string pass)
         {
-            OpenBrowser(BaseURL);
+            utils.OpenBrowser(BaseURL, Driver);
             IWebElement mailInput = Driver.FindElement(By.Name("Email"));
             IWebElement passInput = Driver.FindElement(By.Name("Password"));
             IWebElement btnLogin = Driver.FindElement(By.CssSelector("section#loginForm form input[type=submit]"));
