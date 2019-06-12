@@ -54,6 +54,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CTs\CTForgotPassword.cs" />
     <Compile Include="CTs\CTList.cs" />
     <Compile Include="CTs\CTLogin.cs" />
     <Compile Include="Program.cs" />

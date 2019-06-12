@@ -123,7 +123,6 @@ namespace ScriptsTeste_PBPWEB.CTs
         [Test(Description = "Success test")]
         public void ConsultWithData()
         {
-            "body > div.container.body-content > div > table > tbody > tr:nth-child(1)"
         }
         #endregion ConsultList
 
